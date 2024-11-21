@@ -1,0 +1,261 @@
+body {
+    background-color: #141619;
+}
+
+/* Scrollbar styling */
+::-webkit-scrollbar {
+    width: 0px;
+}
+
+::-webkit-scrollbar-track {
+  background: #141619;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #141619;
+  border-radius: 25px;
+}
+
+/* Ensures the canvas covers the entire background */
+#background-canvas {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: -1; /* Sends the canvas behind other content */
+}
+
+/* Style for each section */
+.page-section {
+    height: 100vh; /* Full viewport height for each section */
+    font-size: 2rem;
+    color: #b3b4bd;
+}
+
+#skills, #education, #projects, #contact {
+    height: auto;
+}
+
+
+
+/* About Section */
+.about-icons svg {
+    width: 25px;
+}
+
+.about-icons svg:hover {
+    scale: 1.1;
+    transition: all ease-in-out 0.2ms;
+}
+
+#memoji {
+    background: linear-gradient(187deg, rgba(255,255,255,0.15) 22%, rgba(241,241,241,0.15) 100%);
+    box-shadow: 0 8px 32px 0 rgba(66, 66, 66, 0.37);
+    backdrop-filter: blur( 1.5px );
+    -webkit-backdrop-filter: blur( 2.5px );
+    border-radius: 20px;   
+
+    max-width: 400px; /* Maximum size */
+    min-width: 200px; /* Minimum size */
+    height: auto;     /* Maintain aspect ratio */
+}
+
+
+
+/* Skills Section */
+.skill-icons img {
+    width: 50px;
+    margin: 16px;
+}
+
+#skills  .skill-desc {
+    width: 50%;
+    font-size: 18px;
+    margin: auto;
+}
+
+#skills .card {
+    background-color: rgba(0,0,0,0);
+    border: none;
+    max-width: 75%;
+    min-width: 50%;
+    height: auto;
+}
+
+#skills  .card h5 {
+    color: #b3b4bd
+}
+
+#skills  .skill-label {
+    font-size: 16px;
+    visibility: hidden;
+    color: #b3b4bd;
+}
+
+#skills  .card-body div:hover {
+    scale: 1.1;
+    .skill-label {
+        visibility: visible;
+    }
+}
+
+/* Education Section */
+.timeline {
+    border-left: 3px solid #1f2226;
+    border-bottom-right-radius: 4px;
+    border-top-right-radius: 4px;
+    margin: 0 auto;
+    position: relative;
+    padding: 50px;
+    list-style: none;
+    text-align: left;
+    max-width: 75%;
+    left: 10%;
+}
+.timeline .event p {
+    font-size: 18px;
+}
+
+.education-collapse {
+    display: none;
+    opacity: 0.8;
+    font-size: 16px;
+}
+
+.timeline .event {
+    padding-bottom: 25px;
+    margin-bottom: 25px;
+    position: relative;
+}
+
+.timeline .event button {
+    background-color: rgba(0,0,0,0);
+    color: #b3b4bd;
+    border: none;
+}
+
+.timeline .event:last-of-type {
+    padding-bottom: 0;
+    margin-bottom: 0;
+    border: none;
+}
+
+.timeline .event:before,
+.timeline .event:after {
+    position: absolute;
+    display: block;
+    top: 0;
+}
+
+.timeline .event:before {
+    left: -207px;
+    content: attr(data-date);
+    text-align: right;
+    font-weight: 100;
+    font-size: 0.9em;
+    min-width: 120px;
+}
+
+.timeline .event:after {
+    box-shadow: 0 0 0 3px #1f2226;
+    left: -55.8px;
+    background: #141619;
+    border-radius: 50%;
+    height: 9px;
+    width: 9px;
+    content: "";
+    top: 18px;
+}
+
+@media (max-width: 767px) {
+    .timeline {
+        max-width: 90%;
+        padding: 25px;
+        left: 5%;
+    }
+
+    .timeline .event {
+        padding-top: 30px;
+    }
+
+    .timeline .event:before {
+        left: 0px;
+        text-align: left;
+    }
+
+    .timeline .event:after {
+        left: -31.8px;
+    }
+}
+
+/* Projects Section */
+#edu-desc {
+    width: 50%;
+    font-size: 18px;
+    margin: auto;
+}
+
+.project-img {
+    width: 125px;
+}
+
+@media (max-width: 922px) {
+    .project-img {
+        width: 75px;
+    }
+    .card-text {
+        display: none;
+    }
+}
+
+.project-desc {
+    width: 50%;
+    font-size: 18px;
+    margin: auto;
+}
+
+.project-card {
+border: 3px solid #1f2226;
+border-radius: 10px;
+}
+
+.card-title {
+font-size: 1.5rem;
+color: #b3b4bd;
+}
+
+.card-text {
+font-size: 1rem;
+color: #b3b4bd;
+opacity: 0.8;
+}
+
+.technologies .badge {
+font-size: 0.8rem;
+background-color: #1f1f1f;
+}
+
+/* Contact Section */
+#contact p {
+    width: 50%;
+    font-size: 18px;
+    margin: auto;
+}
+
+#contact a {
+    text-decoration: none;
+    padding: 12px;
+    color: #b3b4bd;
+    background-color: #141619;
+    border-radius: 25px;
+    font-size: 18px;
+    margin: 0 12px;
+    border: 2px solid #b3b4bd;
+}
+
+#contact a:hover {
+    background-color: #b3b4bd;
+    color: #141619;
+    
+}

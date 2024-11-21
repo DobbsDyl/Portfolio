@@ -1,0 +1,38 @@
+[
+  {
+    "title": "Network Monitor",
+    "description": "A Python application with a user-friendly interface to track devices on a network. Features include IP/MAC address blacklisting and ongoing threat detection development.",
+    "technologies": ["Python"],
+    "image": "images/networkMonitor.png",
+    "link": "https://example.com/project1"
+  },
+  {
+    "title": "Bookstore",
+    "description": "A Java Spring Boot application with user accounts, offering an online bookstore for easy browsing and purchasing.",
+    "technologies": ["Java", "Spring Boot", "HTML", "CSS"],
+    "image": "images/bookstore.jpg",
+    "link": "https://example.com/project2"
+  },
+  {
+    "title": "Weather Forecast Website",
+    "description": "A REST API-integrated site built with Java Spring Boot to provide global weather updates. Users can save favorite locations after signing up.",
+    "technologies": ["Java", "Spring Boot", "HTML", "CSS"],
+    "image": "images/weather.png",
+    "link": "https://example.com/project2"
+  },
+  {
+    "title": "Smarthome App",
+    "description": "A JavaFX-based UI project for controlling smart home devices, created during your first year in school.",
+    "technologies": ["Java", "JavaFX"],
+    "image": "images/smarthome.png",
+    "link": "https://example.com/project1"
+  },
+  {
+    "title": "Sudoku Game",
+    "description": "A Java-based game offering Sudoku puzzles with varying difficulty levels for a fun and engaging challenge.",
+    "technologies": ["Java"],
+    "image": "images/suduko.png",
+    "link": "https://example.com/project1"
+  }
+  
+]

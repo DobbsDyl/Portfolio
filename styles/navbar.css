@@ -1,0 +1,52 @@
+.sidebar {
+    position: fixed;
+    right: 0;
+}
+
+.nav-div {
+    position: fixed;
+    right: 20px;
+    height: 100vh;
+}
+
+.navline {
+    border-right: 5px solid #b3b4bd;
+    height: 25%;
+    display: flex;
+    align-content: center;
+}
+
+.navline a {
+    text-decoration: none;
+    color: #b3b4bd;
+    text-align: right;
+}
+
+.fixed-nav-div {
+    background-color: #1f2226;
+    padding: 18px;
+    position: fixed;
+    width: 100vw;
+    visibility: hidden;
+    z-index: 99;
+}
+
+.ftimeline {
+    border-bottom: 5px solid #b3b4bd;
+    height: 25%;
+}
+
+.ftimeline a {
+    text-decoration: none;
+    color: #b3b4bd;
+}
+
+@media only screen and (max-width: 922px) {
+    .fixed-nav-div {
+        visibility: visible;
+    }
+
+    .sidebar {
+        visibility: hidden;
+    }
+}

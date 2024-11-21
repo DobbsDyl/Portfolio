@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="stylesheet" href="styles/navbar.css">
+    <link rel="stylesheet" href="styles/card.css">
+
+
+    <title>Dylan Dobbs</title>
+</head>
+<body>
+<!-- Your main content here -->
+<div class="fixed-nav-div">
+    <div class="fixed-nav d-flex flex-row justify-content-around">
+        <div class="ftimeline" id="fabout">
+            <a href="#about">About</a>
+        </div>
+        <div class="ftimeline" id="fskill">
+            <a href="#end">Skills</a>
+        </div>
+        <div class="ftimeline" id="feducation">
+            <a href="#education">Education</a>
+        </div>
+        <div class="ftimeline" id="fprojects">
+            <a href="#projects">Projects</a>
+        </div>
+        <div class="ftimeline" id="fcontact">
+            <a href="#contact">Contact</a>
+        </div>
+    </div>
+</div>
+<div class="sidebar z-2">
+    <div class="nav-div d-flex flex-column">
+        <div class="navline row" id="About">
+            <a href="#about">About</a>
+        </div>
+        <div class="navline row" id="Skills">
+            <a href="#end">Skills</a>
+        </div>
+        <div class="navline row" id="Education">
+            <a href="#education">Education</a>
+        </div>
+        <div class="navline row" id="Projects">
+            <a href="#projects">Projects</a>
+        </div>
+        <div class="navline row" id="Contact">
+            <a href="#contact">Contact</a>
+        </div>
+    </div>
+</div>
+<div class="main-container container-fluid">
+    <div class="row">
+        <div class="main-content col-xl-12" >
+            <section id="about" class="page-section d-flex flex-column justify-content-center ">
+                <div class="container text-align-center">
+                    <div class="row d-flex align-items-center">                      
+                        <div class="memoji-div col-xl-6 d-flex justify-content-center">
+                            <img src="/images/memoji.png" alt="" id="memoji" width="500" class="rounded-circle">
+                            <canvas id="background-canvas"></canvas>
+                        </div>
+                        <div class="col-xl-6">
+                            <div class="d-flex flex-column align-items-center text-center pt-4">
+                                <h2>Hi, i'm Dylan Dobbs!</h2>
+                                <h4>Front-End & Software Developer</h2>
+                            </div>
+                            <div class="about-icons d-flex gap-5 pt-4 justify-content-center">
+                                <a href="mailto:dobbsd@sheridancollege.ca?subject=Subject Here&body=Body Here" target="_blank">
+                                    <svg xmlns="http://www.w3.org/2000/svg" shape-rendering="geometricPrecision" text-rendering="geometricPrecision" image-rendering="optimizeQuality" fill-rule="evenodd" clip-rule="evenodd" viewBox="0 0 512 327.53"><path fill="#b3b4bd" d="M254.41 274.97l100.93-100.92 153.49 153.48H0l153.49-153.48 100.92 100.92zM5.84 0l248.57 248.56L502.98 0H5.84zM0 290.3l131.77-131.78L0 26.75V290.3zm512 12.61L367.61 158.52 512 14.14v288.77z"/></svg>
+                                </a>
+                                <a href="https://www.linkedin.com/in/dylan-dobbs-97020b292/" target="_blank">
+                                    <svg xmlns="http://www.w3.org/2000/svg" shape-rendering="geometricPrecision" text-rendering="geometricPrecision" image-rendering="optimizeQuality" fill-rule="evenodd" clip-rule="evenodd" viewBox="0 0 512 512"><path fill="#b3b4bd" d="M474.919 0H38.592C17.72 0 0 16.504 0 36.841V475.14C0 495.496 11.629 512 32.492 512h436.327C489.718 512 512 495.496 512 475.14V36.841C512 16.504 495.809 0 474.919 0zM195.043 195.043h68.928v35.136h.755c10.505-18.945 41.541-38.177 79.921-38.177 73.655 0 94.214 39.108 94.214 111.538v135.321h-73.148V316.883c0-32.427-12.947-60.883-43.227-60.883-36.768 0-54.295 24.889-54.295 65.758v117.103h-73.148V195.043zM73.139 438.861h73.148V195.043H73.139v243.818zm82.289-329.148c0 25.258-20.457 45.715-45.715 45.715-25.258 0-45.715-20.457-45.715-45.715 0-25.258 20.457-45.715 45.715-45.715 25.258 0 45.715 20.457 45.715 45.715z"/></svg>
+                                </a>
+                                <a href="https://github.com/DobbsDyl" target="_blank">
+                                    <svg xmlns="http://www.w3.org/2000/svg" shape-rendering="geometricPrecision" text-rendering="geometricPrecision" image-rendering="optimizeQuality" fill-rule="evenodd" clip-rule="evenodd" viewBox="0 0 512 499.368"><path fill="#b3b4bd" fill-rule="nonzero" d="M256.003 0C114.555 0 0 114.555 0 256.003c0 113.286 73.28 208.961 175.038 242.865 12.796 2.247 17.586-5.433 17.586-12.153 0-6.077-.309-26.225-.309-47.686-64.313 11.844-80.941-15.674-86.058-30.055-2.896-7.37-15.359-30.1-26.269-36.177-8.948-4.808-21.752-16.652-.31-16.961 20.168-.309 34.574 18.564 39.382 26.244 23.038 38.732 59.839 27.828 74.555 21.101 2.227-16.627 8.947-27.828 16.318-34.239-56.968-6.386-116.467-28.471-116.467-126.399 0-27.827 9.907-50.866 26.225-68.787-2.562-6.41-11.51-32.655 2.562-67.853 0 0 21.436-6.72 70.409 26.244 20.483-5.767 42.227-8.638 63.998-8.638 21.751 0 43.52 2.896 63.997 8.638 48.973-33.279 70.39-26.244 70.39-26.244 14.09 35.192 5.117 61.443 2.562 67.853 16.318 17.921 26.244 40.625 26.244 68.787 0 98.237-59.84 119.988-116.801 126.399 9.282 8.014 17.277 23.373 17.277 47.371 0 34.238-.309 61.751-.309 70.389 0 6.721 4.808 14.735 17.586 12.179C438.739 464.964 512 368.955 512 256.003 512 114.555 397.445 0 256.003 0z"/></svg>
+                                </a>
+                                <a href="/images/DYLANDOBBS_RESUME.pdf" target="_blank" id="end">
+                                    <svg xmlns="http://www.w3.org/2000/svg" shape-rendering="geometricPrecision" text-rendering="geometricPrecision" image-rendering="optimizeQuality" fill-rule="evenodd" clip-rule="evenodd" viewBox="0 0 424 511.65"><path fill="#b3b4bd" d="M28.21 53.37h67.64v43.72H66.68c-13.03 0-23.82 10.8-23.82 23.82v326.57c0 13.04 10.73 23.82 23.82 23.82h290.64c13.09 0 23.82-10.75 23.82-23.82V120.91c0-13.08-10.79-23.82-23.82-23.82h-29.17V53.37h67.64c15.52 0 28.21 12.77 28.21 28.21v401.86c0 15.46-12.75 28.21-28.21 28.21H28.21C12.75 511.65 0 498.96 0 483.44V81.58c0-15.52 12.69-28.21 28.21-28.21zM212 379.45H111.25c-1.64 0-2.98-1.33-2.98-2.98 0-.85.12-1.68.33-2.52 4.77-37.82 24.32-38.49 45.36-43.98 6.29-1.65 17.76-5.14 24.44-10.99 3.66-3.23 5.9-7.17 5.01-11.92-5.09-4.71-8.99-9.8-9.88-19.52l-.6.01c-1.42-.02-2.78-.34-4.05-1.06-2.8-1.59-4.34-4.65-5.08-8.14-.94-4.41-.63-9.64-.17-12.96l.17-.64c.98-2.73 2.19-4.21 3.73-4.85l.04-.02c-.7-13.13 1.52-33.93-11.97-38.01 26.62-32.9 57.32-50.79 80.36-21.53 25.68 1.35 37.13 39.2 21.19 59.56h-.68c1.54.64 2.75 2.12 3.73 4.85l.17.64c.46 3.32.77 8.55-.17 12.96-.74 3.49-2.28 6.55-5.08 8.14-1.27.72-2.63 1.04-4.05 1.06l-.6-.01c-.89 9.72-4.79 14.81-9.88 19.52-.89 4.75 1.35 8.69 5.01 11.92 6.68 5.85 18.15 9.34 24.44 10.99 21.04 5.49 40.59 6.16 45.36 43.98.21.84.33 1.67.33 2.52 0 1.65-1.34 2.98-2.98 2.98H212zM134.93 39.4h31.97C169.6 17.18 187.53 0 209.28 0c21.6 0 39.44 16.95 42.33 38.93l37.42.47c2.62 0 4.71 2.09 4.71 4.7v63.84c0 2.6-2.09 4.7-4.71 4.7H134.97c-2.56 0-4.7-2.1-4.7-4.7V44.1c-.05-2.61 2.05-4.7 4.66-4.7zm56.84 19.33c2.89 3.96 7.03 7.86 11.41 9.87 3.58 1.07 7.49 1.17 11.13.18 5.68-2.61 10.9-8.89 13.31-14.15.29-1.49.48-3.03.48-4.71 0-11.13-8.53-20.16-19.06-20.16-10.52 0-19.04 9.03-19.04 20.16.05 3.36.65 6.34 1.77 8.81z"/></svg>
+                                </a>                                   
+                            </div>
+                        </div>
+                    </div> 
+                </div>
+            </section>
+            <section id="skills" class="page-section text-center">
+                <h2 class="pt-3 pb-4">My Stack</h2>
+                <p class="skill-desc">I bring a versatile skill set to the table, covering both front-end and back-end technologies.</p>
+                <div class="skill-icons d-flex justify-content-center">
+                    <div class="card">
+                        <div class="card-body p-4 d-flex justify-content-center flex-wrap flex-grow-1">
+                            <div>
+                                <img src="/images/java-svgrepo-com.svg" alt="">
+                                <p class="skill-label">Java</p>
+                            </div>                           
+                            <div>
+                                <img src="/images/python-programming-language-icon (1).png" alt="">
+                                <p class="skill-label">Python</p>
+                            </div>
+                            <div>
+                                <img src="/images/javascript-logo-svgrepo-com.svg" alt="">
+                                <p class="skill-label">Javascript</p>
+                            </div>
+                            <div>
+                                <img src="/images/html5-svgrepo-com.svg" alt="">
+                                <p class="skill-label">HTML</p>
+                            </div>
+                            <div>
+                                <img src="/images/css3-svgrepo-com.svg" alt="">
+                                <p class="skill-label">CSS</p>
+                            </div>
+                            <div>
+                                <img src="/images/sql-database-generic-svgrepo-com.svg" alt="">
+                                <p class="skill-label">SQL</p>
+                            </div>
+                            <div>
+                                <img src="/images/angular-icon-svgrepo-com.svg" alt="">
+                                <p class="skill-label">Angular</p>
+                            </div>
+                            <div>
+                                <img src="/images/bootstrap.png" alt="">
+                                <p class="skill-label">Bootstrap</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+            </section>
+            <section id="education" class="page-section text-center pb-5">
+                <div class="container mt-5 pt-3">
+                    <h2 class="text-center mb-3 pb-4">My Education</h2>
+                    <ul class="timeline text">
+                        <li class="event" data-date="2018 - 2021">
+                            <div class="d-flex justify-content-center">
+                                <h4 class="mb-3 mt-3">
+                                    University of Guelph
+                                    <p class="mt-2">Bachelor of Science</p>
+                                </h4>
+                                <button class="mt-3 align-self-start ms-auto p-2" onclick="showEducation('guelph')">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="#b3b4bd" class="bi bi-chevron-down" viewBox="0 0 16 16">                  
+                                        <path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708"/>
+                                    </svg>
+                                </button>
+                            </div>
+                            <div class="education-collapse" id="guelph-content">
+                                <p>Graduated with a Bachelor of Science from the University of Guelph. During this time, I studied physics, chemistry, biology, data analysis, and mathematics, building a strong foundation in scientific principles and analytical thinking.</p>
+                            </div>
+                        </li>
+                        <li class="event" data-date="2022 - 2025">
+                            <div class="d-flex justify-content-between">
+                                <h4 class="mb-3 mt-3">
+                                    Sheridan College
+                                    <p class="mt-2">Software Development and Network Engineering Advanced Diploma</p>
+                                </h4>
+                                <button class=" mt-3 btn align-self-start ms-auto p-2" onclick="showEducation('sheridan')">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="#b3b4bd" class="bi bi-chevron-down" viewBox="0 0 16 16">                  
+                                        <path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708"/>
+                                    </svg>
+                                </button>
+                            </div>
+                            
+                            <div class="education-collapse" id="sheridan-content">
+                                <p>Currently completing a diploma in Software Development and Network Engineering at Sheridan College, with a current GPA of 3.96/4.0. My education included programming, database design and management, UI/UX design, web development, network engineering, and mastering the software development lifecycle (SDLC).</p>
+                            </div>
+                            
+                        </li>
+                    </ul>
+                </div>               
+            </section>
+            <section id="projects" class="page-section mt-5 pt-5 text-center">
+                <h2 class="mb-2">My Work</h2>
+                <p id="edu-desc" class="pb-5">Here are some of my recent projects, showcasing my skills in software development and UI/UX design.</p>
+                <div id="project-cards" class="container d-flex flex-column align-items-center gap-4">
+                    
+                </div>
+            </section>
+            <section id="contact" class="page-section text-center mt-5 pt-5 mb-5">
+                <h2>Contact Me</h2>
+                <p class="mt-3 mb-5">I'd love to hear from you! Feel free to reach out via email or connect with me on LinkedIn:</p>
+                <a href="mailto:dobbsd@sheridancollege.ca?subject=Subject Here&body=Body Here" target="_blank">
+                    Email Me
+                </a>
+                <a href="https://www.linkedin.com/in/dylan-dobbs-97020b292/" target="_blank">
+                    Connect on LinkedIn
+                </a>
+            </section>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+    <!-- Custom JS -->
+    <script src="/scripts/bg-animation.js"></script>
+    <script src="/scripts/script.js"></script>
+
+    <!-- Bootstrap JS and Popper.js -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+
+    <script>
+        // Ensure BgAnimation is initialized after the scripts load
+        window.onload = () => {
+            const bgAnimation = new BgAnimation();
+            bgAnimation.init();
+        };
+    </script>
+</body>
+</html>

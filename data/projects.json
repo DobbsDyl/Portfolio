@@ -17,7 +17,7 @@
     "title": "Weather Forecast Website",
     "description": "A REST API-integrated site built with Java Spring Boot to provide global weather updates. Users can save favorite locations after signing up.",
     "technologies": ["Java", "Spring Boot", "HTML", "CSS"],
-    "image": "images/weather.png",
+    "image": "images/Weather.png",
     "link": "https://example.com/project2"
   },
   {
